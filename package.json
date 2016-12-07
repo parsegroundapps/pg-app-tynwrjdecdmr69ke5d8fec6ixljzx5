@@ -1,0 +1,21 @@
+{
+    "name": "my-dev-parse-server",
+    "version": "0.1.0",
+    "description": "My Development Parse Server with CloudCode",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ParsePlatform/parse-server.git"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "parse": "~1.8.0",
+        "parse-server": "~2.2.2"
+    },
+    "scripts": {
+        "start": "node index.js"
+    },
+    "engines": {
+        "node": ">=4.3"
+    }
+}
