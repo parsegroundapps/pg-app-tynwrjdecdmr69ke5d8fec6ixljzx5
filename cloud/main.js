@@ -1,5 +1,6 @@
-require('./functions')
-
+require('./signup');
+require('./request');
+require('./contact');
 /*
 * If you want to use Advanced Cloud Code,
 * exporting of module.exports.app is required.
