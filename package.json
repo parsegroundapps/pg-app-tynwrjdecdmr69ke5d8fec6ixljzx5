@@ -9,8 +9,8 @@
     },
     "license": "MIT",
     "dependencies": {
-        "parse": "~1.8.0",
-        "parse-server": "~2.2.2"
+        "parse": "~1.11.1",
+        "parse-server": "~2.3.3"
     },
     "scripts": {
         "start": "node index.js"
