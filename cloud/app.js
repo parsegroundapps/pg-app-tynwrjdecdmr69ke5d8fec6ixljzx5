@@ -7,7 +7,7 @@ var app = express();
 
 app.get('/hello-advanced', function (req, res)
 {
-  res.send("Hello from SashiDo's Advanced Cloud Code");
+  res.send("Hello from SashiDo's Very Advanced Cloud Code");
 });
 
 /*
