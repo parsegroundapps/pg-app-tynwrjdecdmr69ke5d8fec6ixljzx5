@@ -1,0 +1,19 @@
+Parse.Cloud.job("NotificationSender", function(request, status)
+{
+  var query = new Parse.Query(Parse.Tip);
+  query.each(function(Tip)
+  {
+	if(Tip.get('PushNotify') === "false")
+	{
+		Tip.set("PushNotify", "true");
+		return Tip.save(null, { useMasterKey: true });
+	};
+
+  }, { useMasterKey: true }).then(function()
+  {
+    status.success("Function is working");
+  }, function(error)
+  {
+    status.error("Something went wrong.");
+  });
+});
